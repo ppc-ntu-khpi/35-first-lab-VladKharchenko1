@@ -1,18 +1,17 @@
-public  class  Shirt {
-  общедоступный  int shirtID =  5 ; // стандартне значення номера моделі сорочки
-  общедоступное  описание строки =  " R " ;
-  public  String color =  " Красный " ; // стандартный опис сорочки
-  // коды кольорів: R = червоний, B = синій, G = зелений, U = невідомо
-  // общедоступный символ colorCode = 'U';
-  публичная  двойная цена =  21,2 ; // стандартна вартість сорочки
-  public  int amountInStock =  0 ; // стандартное количество на складі
+public class Shirt {
+  public int shirtID = 0; // стандартне значення номера моделі сорочки
+  public String description = "G"; // стандартний опис сорочки
+  // коди кольорів: R=червоний, B=синій, G=зелений, U=невідомо
+  public char colorCode = 'G';
+  public double price = 99.0; // стандартна вартість сорочки
+  public int quantityInStock = 0; // стандартна кількість на складі
   
   // цей метод просто виводить всю інформацію про сорочку на екран
-  public  void  displayShirtInformation () {
-    Система . из . println ( " Идентификатор рубашки: "  + идентификатор рубашки);
-    Система . из . println ( " Описание рубашки: "  + описание);
-    Система . из . println ( " Цвет: "  + цвет);
-    Система . из . println ( " Цена рубашки: $ "  + цена);
-    Система . из . println ( " Количество на складе: "  + amountInStock);
+  public void displayShirtInformation() {
+    System.out.println("Shirt ID: " + shirtID);
+    System.out.println("Shirt description:" + description);
+    System.out.println("Color Code: " + colorCode);
+    System.out.println("Shirt price: $" + price);
+    System.out.println("Quantity in stock: " + quantityInStock);
   } // кінець методу displayShirtInformation
 } // кінець опису класу
